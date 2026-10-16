@@ -325,9 +325,8 @@
   const successMsg = document.getElementById('formSuccessMsg');
   const errorMsg = document.getElementById('formErrorMsg');
 
-  // Configurable Formspree Endpoint (Setup documented in README.md)
-  // Formspree default form ID placeholder: 'mkgonvze' (can be replaced with user's verified form ID)
-  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/dinhtanhoang2309';
+  // Configurable Formspree Endpoint (Official Form ID: mwlvarod)
+  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mwlvarod';
 
   if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
@@ -400,8 +399,9 @@
           successMsg.style.display = 'block';
           contactForm.reset();
         } else {
-          // If Formspree endpoint is not yet connected by user, show clear helpful guidance
-          errorMsg.innerHTML = `Form submission endpoint is in setup mode. Please send your inquiry directly to our coordination inbox at <a href="mailto:dinhtanhoang2309@gmail.com" style="color:#38bdf8;text-decoration:underline;">dinhtanhoang2309@gmail.com</a>.`;
+          const data = await response.json().catch(() => null);
+          const errorDetail = (data && data.errors && data.errors.map(err => err.message).join(', ')) || 'There was an issue submitting your message.';
+          errorMsg.innerHTML = `${errorDetail} Please try again or email us directly at <a href="mailto:dinhtanhoang2309@gmail.com" style="color:#38bdf8;text-decoration:underline;">dinhtanhoang2309@gmail.com</a>.`;
           errorMsg.style.display = 'block';
         }
       } catch (err) {
