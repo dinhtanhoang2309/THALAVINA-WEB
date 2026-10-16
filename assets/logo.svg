@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <linearGradient id="oceanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2dd4bf" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+  </defs>
+  <!-- Interlocking Twin Ocean Waves: Vietnam & Nusantara (Indonesia) -->
+  <path d="M6 26C8 18 15 12 24 10C33 8 40 12 43 18C41 16 36 14 31 15C22 16.5 17 24 11 28C9 29.5 7.5 28 6 26Z" fill="url(#oceanGrad)"/>
+  <path d="M10 30C15 23 22 18 31 17C36 16.5 40 17.5 42 19C39 25 33 31 24 33C17 34.5 13 33 10 30Z" fill="url(#waveGrad)" opacity="0.9"/>
+  <!-- Sea Turtle Silhouette Accents -->
+  <circle cx="25" cy="8" r="2.5" fill="#38bdf8"/>
+  <circle cx="36" cy="12" r="1.5" fill="#2dd4bf" opacity="0.8"/>
+</svg>

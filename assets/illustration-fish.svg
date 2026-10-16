@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 340" fill="none">
+  <defs>
+    <!-- Fish Body Gradient -->
+    <linearGradient id="angelfishBody" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#0369a1" />
+      <stop offset="40%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <!-- Tail Fin Bright Yellow Gradient -->
+    <linearGradient id="tailGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#eab308" />
+      <stop offset="70%" stop-color="#facc15" />
+      <stop offset="100%" stop-color="#fef08a" />
+    </linearGradient>
+    <!-- Head Muzzle Gradient -->
+    <linearGradient id="headGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="60%" stop-color="#e0f2fe" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+    <filter id="fishGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0284c7" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Main Emperor Angelfish -->
+  <g id="mainFish" filter="url(#fishGlow)" transform="translate(10, 20)">
+    <!-- Yellow Tail Fin -->
+    <path d="M70 170 C40 140 10 120 15 160 C20 190 20 220 10 240 C35 230 65 210 75 190 Z" fill="url(#tailGrad)" stroke="#ca8a04" stroke-width="2"/>
+    <!-- Tail Fin Ray Details -->
+    <line x1="20" y1="160" x2="65" y2="175" stroke="#ca8a04" stroke-width="1.5" opacity="0.6"/>
+    <line x1="18" y1="180" x2="68" y2="180" stroke="#ca8a04" stroke-width="1.5" opacity="0.6"/>
+    <line x1="22" y1="200" x2="65" y2="185" stroke="#ca8a04" stroke-width="1.5" opacity="0.6"/>
+    <line x1="16" y1="220" x2="60" y2="190" stroke="#ca8a04" stroke-width="1.5" opacity="0.6"/>
+
+    <!-- Dorsal Fin (Top) with Neon Yellow Trim -->
+    <path d="M120 90 C180 50 250 55 270 85 C240 85 180 95 120 90 Z" fill="#facc15" stroke="#0284c7" stroke-width="2"/>
+    <path d="M140 85 C190 60 240 65 260 85" stroke="#ffffff" stroke-width="2"/>
+
+    <!-- Anal Fin (Bottom) -->
+    <path d="M120 250 C180 290 230 280 250 250 C210 250 160 245 120 250 Z" fill="#0284c7" stroke="#38bdf8" stroke-width="2"/>
+
+    <!-- Main Fish Oval Body -->
+    <path d="M70 180 C70 100 150 70 240 80 C270 85 290 100 310 130 C320 150 320 190 310 215 C290 250 270 260 235 265 C150 275 70 250 70 180 Z" fill="url(#angelfishBody)"/>
+
+    <!-- Signature Horizontal Neon Striping of Emperor Angelfish -->
+    <!-- Distinct alternating electric blue and gold/white stripes -->
+    <path d="M85 140 C140 120 200 115 265 110" stroke="#fde047" stroke-width="5" stroke-linecap="round"/>
+    <path d="M80 155 C140 135 200 130 275 125" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    <path d="M75 170 C140 150 200 145 285 140" stroke="#fde047" stroke-width="5" stroke-linecap="round"/>
+    <path d="M75 185 C140 165 200 160 288 155" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    <path d="M75 200 C140 180 200 175 285 170" stroke="#fde047" stroke-width="5" stroke-linecap="round"/>
+    <path d="M80 215 C140 198 200 190 280 185" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    <path d="M85 230 C140 215 200 208 270 205" stroke="#fde047" stroke-width="5" stroke-linecap="round"/>
+    <path d="M95 245 C150 232 200 225 255 220" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Pectoral Fin (Side Wing) -->
+    <path d="M170 180 C185 210 180 245 160 260 C155 240 155 210 170 180 Z" fill="#38bdf8" opacity="0.8" stroke="#bae6fd" stroke-width="1.5"/>
+
+    <!-- Head & Mask Section -->
+    <path d="M260 95 C280 105 295 120 310 140 C325 165 320 200 305 225 C285 250 265 255 250 255 C270 220 275 170 260 95 Z" fill="#1e293b"/>
+    <!-- Yellow Crown over Eyes -->
+    <path d="M260 95 C275 90 290 95 300 108 C290 120 275 120 260 115 Z" fill="#facc15"/>
+    <!-- Pale/White Snout & Muzzle -->
+    <path d="M295 130 C310 145 320 165 320 180 C320 195 310 210 295 220 C305 195 305 155 295 130 Z" fill="url(#headGrad)"/>
+    <!-- Fish Mouth -->
+    <path d="M318 175 Q325 178 318 181" stroke="#0f172a" stroke-width="2" fill="none"/>
+
+    <!-- Bright Eye with Cyan Ring -->
+    <circle cx="285" cy="140" r="9" fill="#0284c7"/>
+    <circle cx="285" cy="140" r="6" fill="#0f172a"/>
+    <circle cx="283" cy="138" r="2.5" fill="#ffffff"/>
+  </g>
+
+  <!-- Smaller Companion Fish (matching mockup composition) -->
+  <g id="companionFish" transform="translate(230, 210) scale(0.48)">
+    <path d="M70 170 C40 140 10 120 15 160 C20 190 20 220 10 240 C35 230 65 210 75 190 Z" fill="url(#tailGrad)"/>
+    <path d="M70 180 C70 100 150 70 240 80 C270 85 290 100 310 130 C320 150 320 190 310 215 C290 250 270 260 235 265 C150 275 70 250 70 180 Z" fill="url(#angelfishBody)"/>
+    <path d="M85 140 C140 120 200 115 265 110" stroke="#fde047" stroke-width="7"/>
+    <path d="M75 170 C140 150 200 145 285 140" stroke="#ffffff" stroke-width="6"/>
+    <path d="M75 200 C140 180 200 175 285 170" stroke="#fde047" stroke-width="7"/>
+    <path d="M260 95 C280 105 295 120 310 140 C325 165 320 200 305 225 C285 250 265 255 250 255 C270 220 275 170 260 95 Z" fill="#1e293b"/>
+    <path d="M295 130 C310 145 320 165 320 180 C320 195 310 210 295 220 Z" fill="#ffffff"/>
+    <circle cx="285" cy="140" r="7" fill="#0284c7"/>
+    <circle cx="285" cy="140" r="4" fill="#0f172a"/>
+  </g>
+</svg>

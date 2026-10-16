@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 340" fill="none">
+  <defs>
+    <linearGradient id="boatHullGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="awningGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#fb923c" />
+    </linearGradient>
+  </defs>
+
+  <!-- Upper Half: Sustainable Fishing Vessel -->
+  <g id="fishingBoat" transform="translate(60, 20)">
+    <!-- Rigging & Antenna Mast -->
+    <line x1="200" y1="20" x2="200" y2="100" stroke="#bae6fd" stroke-width="3" stroke-linecap="round"/>
+    <line x1="200" y1="30" x2="260" y2="50" stroke="#7dd3fc" stroke-width="2"/>
+    <circle cx="200" cy="18" r="4" fill="#38bdf8"/>
+    <!-- Radar / Communication Dome -->
+    <path d="M190 40 Q200 30 210 40 Z" fill="#ffffff"/>
+
+    <!-- Rigging Wires to Bow and Stern -->
+    <line x1="200" y1="35" x2="80" y2="120" stroke="#7dd3fc" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <line x1="200" y1="35" x2="280" y2="120" stroke="#7dd3fc" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+    <!-- Wheelhouse / Cabin -->
+    <rect x="170" y="65" width="70" height="55" rx="6" fill="#f0f9ff" stroke="#0369a1" stroke-width="3"/>
+    <!-- Windows -->
+    <rect x="180" y="75" width="20" height="18" rx="3" fill="#0284c7"/>
+    <rect x="210" y="75" width="20" height="18" rx="3" fill="#0284c7"/>
+
+    <!-- Hull of Boat -->
+    <path d="M90 120 L130 160 H260 L290 120 Z" fill="url(#boatHullGrad)" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round"/>
+    <!-- Portholes on Hull -->
+    <circle cx="150" cy="138" r="5" fill="#ffffff"/>
+    <circle cx="190" cy="138" r="5" fill="#ffffff"/>
+    <circle cx="230" cy="138" r="5" fill="#ffffff"/>
+
+    <!-- Water Waves around Boat -->
+    <path d="M60 165 Q100 155 140 165 T220 165 T300 165 T350 165" stroke="#38bdf8" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M40 178 Q90 170 140 178 T240 178 T340 178" stroke="#0ea5e9" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+
+    <!-- Fishing line with bio-buoy -->
+    <path d="M90 130 C60 150 45 190 40 220" stroke="#f97316" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <circle cx="40" cy="220" r="5" fill="#f97316"/>
+  </g>
+
+  <!-- Lower Half: Coastal Fishery Market Stall & Produce Crates -->
+  <g id="marketStall" transform="translate(190, 185)">
+    <!-- Stall Awning Stripes (Coral & Cream) -->
+    <path d="M40 10 L160 10 L170 35 L30 35 Z" fill="#ea580c"/>
+    <path d="M40 10 L65 10 L60 35 L30 35 Z" fill="#fed7aa"/>
+    <path d="M90 10 L115 10 L110 35 L85 35 Z" fill="#fed7aa"/>
+    <path d="M140 10 L160 10 L165 35 L135 35 Z" fill="#fed7aa"/>
+
+    <!-- Scalloped Awning Edge -->
+    <path d="M30 35 Q40 43 50 35 Q60 43 70 35 Q80 43 90 35 Q100 43 110 35 Q120 43 130 35 Q140 43 150 35 Q160 43 170 35" fill="none" stroke="#fed7aa" stroke-width="2"/>
+
+    <!-- Market Table & Frame -->
+    <rect x="35" y="35" width="6" height="85" fill="#cbd5e1"/>
+    <rect x="159" y="35" width="6" height="85" fill="#cbd5e1"/>
+    <rect x="30" y="65" width="140" height="45" rx="4" fill="#0284c7" stroke="#38bdf8" stroke-width="2"/>
+
+    <!-- Harvest Bowls on Market Counter -->
+    <circle cx="60" cy="62" r="12" fill="#e2e8f0"/>
+    <circle cx="95" cy="62" r="14" fill="#e2e8f0"/>
+    <circle cx="135" cy="62" r="12" fill="#e2e8f0"/>
+
+    <!-- Fish / Sea harvest in bowls -->
+    <circle cx="58" cy="60" r="3" fill="#0284c7"/>
+    <circle cx="63" cy="62" r="3" fill="#38bdf8"/>
+    <circle cx="92" cy="59" r="4" fill="#0284c7"/>
+    <circle cx="98" cy="62" r="4" fill="#0ea5e9"/>
+    <circle cx="133" cy="60" r="3" fill="#0284c7"/>
+    <circle cx="138" cy="63" r="3" fill="#38bdf8"/>
+
+    <!-- Stacked Produce Crates Beside Market (Left side) -->
+    <g transform="translate(-80, 20)">
+      <!-- Lower Crate -->
+      <rect x="20" y="45" width="45" height="35" rx="3" fill="#9a3412" stroke="#ea580c" stroke-width="2"/>
+      <line x1="20" y1="58" x2="65" y2="58" stroke="#ea580c" stroke-width="2"/>
+      <line x1="20" y1="70" x2="65" y2="70" stroke="#ea580c" stroke-width="2"/>
+      <!-- Harvest Greens in crate -->
+      <path d="M25 45 Q35 30 45 45 Q55 32 60 45" fill="#2dd4bf"/>
+
+      <!-- Upper Crate -->
+      <rect x="25" y="15" width="40" height="28" rx="3" fill="#c2410c" stroke="#ea580c" stroke-width="2"/>
+      <line x1="25" y1="26" x2="65" y2="26" stroke="#ea580c" stroke-width="2"/>
+      <!-- Ocean Blue Harvest in crate -->
+      <circle cx="35" cy="13" r="5" fill="#38bdf8"/>
+      <circle cx="45" cy="12" r="6" fill="#0284c7"/>
+      <circle cx="55" cy="14" r="5" fill="#38bdf8"/>
+    </g>
+  </g>
+</svg>
